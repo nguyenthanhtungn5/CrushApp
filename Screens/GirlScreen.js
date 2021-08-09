@@ -100,6 +100,14 @@ const GirlScreen = () => {
             <Button
               titleStyle={styles.text_summon_button}
               type="clear"
+              title="Đi chợ không a?"
+              onPress={() => sendPushNotification(token, "Mon", "Đi chợ không a?")}
+              containerStyle={styles.button_summon_box}
+              buttonStyle={styles.button_summon}
+            ></Button>
+            <Button
+              titleStyle={styles.text_summon_button}
+              type="clear"
               title="Bật máy tính nha"
               onPress={() =>
                 sendPushNotification(token, "Mon", "Bật máy tính nha")
